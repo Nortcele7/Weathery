@@ -49,10 +49,11 @@ Make sure you have the following installed:
 
 3. **Set up environment variables:**
    - Create a `.env` file in the root directory
-   - Add your weather API key:
+   - Add your weather API key (you can get one from [OpenWeatherMap](https://openweathermap.org/api)):
      ```env
      VITE_WEATHER_API_KEY=your_api_key_here
      ```
+   - **Note**: Never commit your `.env` file to version control
 
 4. **Start the development server:**
    ```bash
@@ -77,16 +78,19 @@ weathery/
 │   └── vite.svg
 ├── src/
 │   ├── components/
-│   │   ├── Weather.jsx
-│   │   ├── Weather.css
-│   │   └── [weather-icons]
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── .env
+│   │   ├── Weather.jsx        # Main weather component
+│   │   ├── Weather.css        # Component styles
+│   │   └── [weather-icons]    # Weather condition icons
+│   ├── assets/                # Static assets
+│   ├── App.jsx               # Root component
+│   ├── main.jsx              # App entry point
+│   └── index.css             # Global styles
+├── .env                      # Environment variables (not tracked)
 ├── .gitignore
+├── eslint.config.js          # ESLint configuration
+├── LICENSE                   # MIT License
 ├── package.json
-├── vite.config.js
+├── vite.config.js           # Vite configuration
 └── README.md
 ```
 
@@ -126,7 +130,13 @@ Contributions are welcome! Here's how you can help:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👤 Author
+## � API
+
+This app uses weather data from external APIs. To run the project, you'll need to:
+1. Sign up for a free API key at [OpenWeatherMap](https://openweathermap.org/api)
+2. Add the API key to your `.env` file as shown in the installation steps
+
+## �👤 Author
 
 **Nortcele7**
 - GitHub: [@Nortcele7](https://github.com/Nortcele7)
